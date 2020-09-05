@@ -15,7 +15,7 @@ const cheerio = require('cheerio')
 
 module.exports = function (robot) {
   robot.respond(/(pega|pegas|trabajo|trabajos) (.*)/i, function (msg) {
-    msg.send('Buscando en GetOnBrd...')
+    msg.send('Buscando en GetOnBrd... :dev:')
 
     const domain = 'https://www.getonbrd.cl/empleos-'
     const busqueda = msg.match[2]
